@@ -29,11 +29,24 @@
         </section>
         <section id="contact">
             <h2>联系我</h2>
-            <p>你可以通过 <a href="mailto:pengzhixiang999@163.com">电子邮件</a> 联系我。</p>
+            <p>你可以通过 <a href="#" id="emailLink">电子邮件</a> 联系我。</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 个人主页</p>
     </footer>
+    <script>
+        document.getElementById('emailLink').addEventListener('click', function(e) {
+            e.preventDefault();
+            // 可自行选择显示电子邮件地址或者复制到剪贴板
+            alert("我的电子邮件地址: pengzhixiang999@163.com");
+            // 或者使用以下代码复制到剪贴板（支持现代浏览器）
+            /*
+            navigator.clipboard.writeText("pengzhixiang999@163.com").then(function() {
+                alert("电子邮件地址已复制到剪贴板！");
+            });
+            */
+        });
+    </script>
 </body>
 </html>
